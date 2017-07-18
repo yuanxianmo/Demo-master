@@ -24,13 +24,21 @@ var app = express()
 
 
 /*apis接口引用*/
-var data=require('../data.json');
-var apiRoutes=express.Router();
-apiRoutes.get('/data',function (req,res) {
-  res.json(data);
-})
-app.use('/api',apiRoutes);
+var app = express()
 
+var appdata=require('../data.json');
+var goods=appdata.goods;
+
+
+var apiRoutes=express.Router();
+
+apiRoutes.get('/goods',function(req,res){
+  res.json({
+    error:0,
+    data:goods
+  });
+});
+app.use('/api',apiRoutes);
 
 var compiler = webpack(webpackConfig)
 
