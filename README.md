@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-# demo
+# vuejs webapp
 
-> A Vue.js project
+> 这是我vue.js2.0一个小demo，请大家多多指教
 
-## Build Setup
+## 如何使用
 
 ``` bash
 # install dependencies
@@ -19,7 +18,11 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 =======
-# vue2.0-demo
->>>>>>> 657fd7c45e1eb27ec5d96b9cc4247baddb0193e1
+# 使用的技术
+vue.js2.0
+vue-router
+webpack
+vue-loader
+styl
+vue-resource
