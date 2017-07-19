@@ -21,8 +21,13 @@ npm run build --report
 =======
 # 使用的技术
 vue.js2.0
+
 vue-router
+
 webpack
+
 vue-loader
+
 styl
+
 vue-resource
