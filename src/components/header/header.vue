@@ -64,15 +64,10 @@ export default {
   },
   methods: {
     getData: function () {
-      var self = this
-      this.$http.get('/api/goods', {
-        params: {
-          OPT: '200'
-        }
-      }).then(function (response) {
-        self.goods = response.data.data
-      }, function () {
-        console.log('error')
+      let self = this
+      this.$http.get('https://raw.githubusercontent.com/yuanxianmo/Demo-master/master/data.json').then((res) => {
+        let response = JSON.parse(res.bodyText)
+        self.goods = response.goods
       })
     },
     ShowDetail () {

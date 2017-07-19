@@ -14,7 +14,7 @@ router.get('/', function (req, res, next) {
 
 app.use(router)
 
-var appdata = require('./data.json')
+var appdata = require('https://raw.githubusercontent.com/yuanxianmo/Demo-master/master/data.json')
 var goods = appdata.goods
 
 var apiRoutes = express.Router()
